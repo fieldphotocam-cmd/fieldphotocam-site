@@ -72,30 +72,69 @@
     </div>
 
     <h1>FieldPhoto Cam Privacy Policy</h1>
-    <div class="updated">Last updated: August 24, 2026</div>
+    <div class="updated">Last updated: September 10, 2026</div>
 
     <p>
       FieldPhoto Cam is designed to help users capture, organize, label,
-      measure, and share photos and videos for field documentation.
+      annotate, measure, export, and share photos and videos for field
+      documentation. This policy explains the information processed by
+      FieldPhoto Cam and, for the Android Measure feature, by Google Play
+      Services for AR (ARCore).
     </p>
+
+    <h2>Information You Provide and Create</h2>
+    <p>Depending on how you use FieldPhoto Cam, the app may process:</p>
+
+    <ul>
+      <li>photos and videos you capture;</li>
+      <li>
+        audio recorded with videos when microphone permission and microphone
+        hardware are available;
+      </li>
+      <li>
+        project, job, address, area, comment, and configurable custom-field
+        text;
+      </li>
+      <li>
+        timestamps, overlay labels, colors, positions, font choices, and other
+        overlay preferences;
+      </li>
+      <li>measurements you create;</li>
+      <li>
+        annotation text, shapes, arrows, lines, freehand marks, colors, sizes,
+        and positions;
+      </li>
+      <li>a company logo image you explicitly select; and</li>
+      <li>
+        media information and camera or EXIF metadata associated with your
+        files.
+      </li>
+    </ul>
 
     <h2>Local Storage</h2>
     <p>
-      FieldPhoto Cam stores captured photos, videos, job/address information,
-      areas, comments, measurements, timestamps, overlay preferences, company
-      logo settings, and related media information locally within the app's
-      storage on your device.
+      On Android, Raw, Overlay, and Annotated media, annotation metadata,
+      capture records, preferences, and the app-managed copy of a selected
+      company logo are stored in FieldPhoto Cam's private app sandbox. Other
+      apps cannot normally access this sandbox.
     </p>
 
     <p>
-      FieldPhoto Cam does not currently provide user accounts, FieldPhoto cloud
+      On iOS, FieldPhoto Cam stores app-managed content locally in its app
+      container. A selected company logo is stored in the app's Application
+      Support storage.
+    </p>
+
+    <p>
+      FieldPhoto Cam does not provide user accounts, FieldPhoto-operated cloud
       storage, or a FieldPhoto-operated synchronization service.
     </p>
 
     <h2>Camera</h2>
     <p>
       FieldPhoto Cam uses your device's camera to capture photos and videos.
-      Camera access is also required for supported measurement features.
+      Camera access is also required for supported augmented-reality Measure
+      features.
     </p>
 
     <h2>Microphone</h2>
@@ -106,7 +145,26 @@
 
     <p>
       If microphone permission is denied, video may still be recorded without
-      audio.
+      audio. On supported Android devices, silent video is also available when
+      microphone hardware is unavailable.
+    </p>
+
+    <h2>Raw, Overlay, and Annotated Media on Android</h2>
+    <p>
+      On Android, FieldPhoto Cam stores authoritative Raw and Overlay masters
+      as separate files in the app's private sandbox. Creating an Overlay does
+      not overwrite the Raw master. Configurable overlay metadata can include
+      up to five text fields, user-entered values, field labels, independent
+      colors, corner placement, timestamp settings, font choice, measurements,
+      and an enabled company logo.
+    </p>
+
+    <p>
+      Photo Annotation stores annotation instructions and a separate flattened
+      Annotated JPEG derivative. Annotation saves are additive and do not write
+      to the selected Raw or Overlay source. Saving a newer annotation revision
+      can replace the prior saved annotation metadata and derivative for that
+      source; the Raw or Overlay source remains unchanged.
     </p>
 
     <h2>Apple Photos</h2>
@@ -130,18 +188,36 @@
       Photos library.
     </p>
 
+    <h2>Android Gallery</h2>
+    <p>
+      On Android 10 and newer, Save to Gallery uses Android MediaStore to create
+      a separate copy only after you request it. This does not modify or move
+      the app's authoritative master, and FieldPhoto Cam does not request broad
+      storage access for this feature. Android 8 and 9 do not support FieldPhoto
+      Cam's current Save to Gallery implementation.
+    </p>
+
+    <p>
+      Copies saved to Android Gallery or Apple Photos are controlled by that
+      destination and are not automatically deleted when the FieldPhoto Cam
+      copy is deleted.
+    </p>
+
     <h2>Company Logo</h2>
     <p>
-      If you select a company logo, FieldPhoto Cam stores a local copy within
-      the app's Application Support storage. The logo may be included in
+      If you select a company logo, FieldPhoto Cam reads only the image you
+      choose and stores an app-managed local copy. On iOS, this copy is stored
+      in the app's Application Support storage. The logo may be included in
       Overlay media when you enable that option.
     </p>
 
     <p>
-      Raw media is not modified with company-logo branding.
+      Raw media is not modified with company-logo branding. Removing the logo
+      in FieldPhoto Cam removes the app-managed copy; copies already rendered
+      into Overlay media remain part of those media files.
     </p>
 
-    <h2>Measurement</h2>
+    <h2>Measure and Google Play Services for AR on Android</h2>
     <p>
       FieldPhoto Cam may use the device camera and supported augmented-reality
       capabilities to assist with measurements. Measurement information you
@@ -149,47 +225,146 @@
       FieldPhoto content.
     </p>
 
-    <h2>Sharing</h2>
     <p>
-      FieldPhoto Cam does not automatically transmit your job media to outside
-      services.
+      On Android, Measure uses Google Play Services for AR (ARCore), provided by
+      Google. Use of ARCore is subject to the
+      <a href="https://policies.google.com/terms">Google Terms of Service</a>
+      and
+      <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
     </p>
 
     <p>
-      When you choose to share photos, videos, folders, or ZIP archives,
+      According to Google's ARCore Data Safety guidance, ARCore automatically
+      collects the following data regardless of which ARCore APIs an app uses:
+    </p>
+
+    <ul>
+      <li>
+        a Google Account identifier when the user is signed in, or a
+        device-specific identifier when the user is not signed in;
+      </li>
+      <li>
+        performance and diagnostic information about the app, ARCore, and the
+        device; and
+      </li>
+      <li>ARCore API usage and app-activity information.</li>
+    </ul>
+
+    <p>
+      Google states that this collection is required, is used for analytics,
+      operation, diagnostics, and improving AR experiences, is not shared by
+      Google with third parties, and is encrypted in transit on supported
+      devices that originally shipped with Google Play. FieldPhoto Cam's
+      Android Measure feature does not use ARCore Cloud Anchors or the ARCore
+      Geospatial API. It therefore does not intentionally invoke the additional
+      precise-location, video, or Cloud Anchor collection that Google associates
+      with those APIs.
+    </p>
+
+    <p>
+      See Google's
+      <a href="https://developers.google.com/ar/develop/play-safety-label">ARCore
+        Data Safety guidance</a>. Measurements you choose to keep are stored
+      locally by FieldPhoto Cam and may be included in Overlay media. FieldPhoto
+      Cam does not operate a server that receives those measurements.
+    </p>
+
+    <h2>Sharing</h2>
+    <p>
+      FieldPhoto Cam does not automatically transmit your job media to a
+      FieldPhoto server.
+    </p>
+
+    <p>
+      When you choose Share or ZIP export on Android, FieldPhoto Cam creates
+      copies in its private cache and opens the Android system share chooser.
+      Only the destination you select receives access to those copies. The
+      selected destination—such as messaging, email, cloud storage, or another
+      app—has its own privacy practices.
+    </p>
+
+    <p>
+      Temporary Android Share and ZIP staging copies are isolated from the
+      authoritative Raw, Overlay, and Annotated files. Failed preparations are
+      removed immediately. Abandoned staging directories are eligible for
+      automatic removal after seven days when FieldPhoto Cam next performs
+      cleanup.
+    </p>
+
+    <p>
+      On iOS, when you choose to share photos, videos, folders, or ZIP archives,
       FieldPhoto Cam uses the native iOS sharing system. The destination you
       select, such as Messages, Mail, WhatsApp, cloud storage, or another
       application, is responsible for its own privacy practices.
     </p>
 
-    <h2>Deleting Media</h2>
+    <h2>EXIF and Camera Metadata</h2>
     <p>
-      Deleting media within FieldPhoto Cam removes the applicable copies stored
-      in FieldPhoto Cam's app storage.
+      Media files may contain capture time and camera or device metadata. When
+      FieldPhoto Cam creates an Annotated JPEG on Android, it preserves a
+      limited set of available source EXIF fields, including capture date and
+      time, device make and model, exposure information, focal length, and GPS
+      EXIF fields if those fields are already present in the source image.
+      FieldPhoto Cam does not request Android location permission and does not
+      independently add GPS coordinates.
     </p>
 
     <p>
-      Copies previously exported to Apple Photos or shared with another
-      application are separate and are not automatically deleted when
-      FieldPhoto Cam copies are removed.
+      A user-directed Gallery save, Photos save, Share, or ZIP export can
+      include metadata already contained in the exported file.
     </p>
 
-    <h2>App Removal</h2>
+    <h2>Backup and Device Transfer</h2>
     <p>
-      Uninstalling FieldPhoto Cam removes data stored within the app's local
-      container. Media previously exported or shared outside FieldPhoto Cam may
-      remain in those locations.
+      On Android, FieldPhoto Cam excludes its data from Android cloud backup. On
+      Android versions that support separate device-transfer rules, Android
+      device-to-device transfer may transfer the private FieldPhoto files
+      directory to your replacement device. That directory can include
+      app-managed masters, annotation metadata and derivatives, capture
+      records, and company-logo data. This is a user-controlled Android device
+      migration, not a FieldPhoto cloud service.
     </p>
 
     <p>
-      Device and iCloud backup behavior is controlled by Apple and the user's
-      device settings.
+      On Android 11 and earlier, where cloud backup and device transfer cannot
+      be separately configured, FieldPhoto Cam excludes its app data from both
+      mechanisms. On iOS, device and iCloud backup behavior is controlled by
+      Apple and your device settings.
     </p>
 
-    <h2>Tracking, Advertising, and Analytics</h2>
+    <h2>Retention and Deletion</h2>
     <p>
-      FieldPhoto Cam does not currently contain first-party advertising,
-      behavioral tracking, or intentionally integrated analytics services.
+      FieldPhoto Cam retains app-managed content until you delete the applicable
+      media or project in the app, remove a selected company logo, clear the
+      app's data through system settings, or uninstall the app. On Android,
+      deleting a Raw or Overlay source also removes annotation metadata and the
+      Annotated derivative associated with that source. Deleting an entire
+      project removes that project's app-managed content.
+    </p>
+
+    <p>
+      Uninstalling FieldPhoto Cam or clearing its app data removes data in the
+      app's private container, subject to the operating system's deletion and
+      device-transfer behavior. Copies previously saved to Android Gallery,
+      Apple Photos, transferred to a new device, or shared with another
+      application are separate and must be managed in those destinations.
+    </p>
+
+    <h2>First-Party Analytics, Advertising, and Uploads</h2>
+    <p>
+      FieldPhoto Cam itself does not contain a first-party analytics or
+      telemetry system, advertising, behavioral tracking, Firebase, Sentry,
+      crash-report uploading, a first-party HTTP client, or an automatic
+      user-data upload service. FieldPhoto Cam does not operate a cloud backend
+      that receives user-created content.
+    </p>
+
+    <p>
+      This is distinct from the automatic data collection performed by Google
+      Play Services for AR when the Android Measure feature uses ARCore, as
+      described above. Opening a Privacy, Support, Google Terms, Google Privacy,
+      or ARCore guidance link also launches your browser, whose data practices
+      are separate from FieldPhoto Cam.
     </p>
 
     <h2>Changes to This Policy</h2>
